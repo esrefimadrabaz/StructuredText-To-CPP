@@ -1,0 +1,47 @@
+FUNCTION test_function
+VAR
+first : BOOLEAN := TRUE; 
+second : BOOLEAN; 
+END_VAR;
+IF value < 7 THEN
+t.PRE := delay_time;
+Var1:=Var1*2;
+    WHILE Counter<>0 DO
+    Var1:=Var1*2;
+    Counter:=Counter-1;
+END_WHILE;
+ELSE
+t.PRE := delay_timer;
+    WHILE Counter<>0 DO
+    Var1:=Var1*2;
+    Counter:=Counter-1;
+END_WHILE;
+END_IF;
+CASE PumpState OF
+0:
+    StateDescription := "Stopped";
+1:
+    StateDescription := "Running";
+2:
+    StateDescription := "Failed";
+ELSE
+    StateDescription := "Invalid";
+END_CASE;
+
+Index := 0;
+Sum := 0;
+REPEAT
+    Sum := Sum + Values[ Index ];
+    Index := Index + 1;
+UNTIL Index >= 10 END_REPEAT;
+
+Sum:= 0;
+FOR Index := 0 TO 5 DO
+    Sum := Sum + Item[ Index ];
+	
+IF Index = 111 THEN
+EXIT;
+END_IF;
+
+END_FOR;
+END_FUNCTION;
